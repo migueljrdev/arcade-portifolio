@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="tp-br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/styles/output.css">
     <title>Portfólio Arcade</title>
 </head>
-<body class="bg-dark-primary overflow-x-hidden min-h-screen relative">
+<body class="bg-dark-primary font-press-start overflow-x-hidden min-h-screen relative">
     
     <div class="fixed top-0 left-0 w-full h-full bg-gradient-custom bg-100-4 z-50 pointer-events-none opacity-40"></div>
 
@@ -18,10 +23,10 @@
     <div class="space-invader" style="top: 80%; left: 70%; animation-delay: 3s;"></div>
 
     <div class="container p-4 relative z-10">
-        <header class="flex flex-col py-4 px-0 justify-between items-center mb-10 border-b-2 border-dashed border-b-roxo-light-color relative">
-            <div class="logo shadow-primary uppercase mr-6 font-bold">&lt;/ DEV Miguel Jr &gt;</div>
-            <button class="block md:hidden absolute top-4 right-5 border-2 border-secondary-color text-secondary-color text-xl cursor-pointer py-2 px-3 bg-[#00000080]" id="menuToggle">
-                <i class="fas fa-bars text-xl"></i>
+        <header class="flex flex-col py-4 px-0 justify-around items-start mb-10 border-b-2 border-dashed border-b-roxo-light-color relative">
+            <div class="logo shadow-primary uppercase tracking-tight">&lt;/DEV Miguel Jr&gt;</div>
+            <button class="block md:hidden absolute top-4 right-1 border-2 border-secondary-color text-secondary-color text-xl cursor-pointer py-2 px-3 bg-[#00000080]" id="menuToggle">
+                <i class="fas fa-bars"></i>
             </button>
             <nav class="w-full hidden" id="mainNav">
                 <ul class="flex flex-col gap-3 w-full">

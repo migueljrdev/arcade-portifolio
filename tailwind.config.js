@@ -5,6 +5,9 @@ module.exports = {
     "./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        'press-start': ['"Press Start 2P"', 'cursive'],
+      },
       backgroundSize: {
         '100-4': '100% 4px',
       },
