@@ -38,6 +38,32 @@
         @apply block;
     }
 
+    .hero-h1 {
+        @apply text-xl md:text-4xl mb-5 text-yellow-color shadow-secondary relative leading-snug;
+    }
+    .hero-h1::after {
+        content: '';
+        @apply absolute -bottom-2.5 left-0 w-full h-1 bg-rainbow-underline;
+    }
+
+    .btn{
+        @apply block md:inline-block w-full mr-0 py-3 px-6 bg-roxo-light-color text-white no-underline text-sm cursor-pointer relative overflow-hidden transition-all duration-300 md:mr-3.5 mb-3.5 border-2 border-yellow-color box-shadow-roxo;
+    }
+    .btn:hover {
+        @apply bg-yellow-color text-black box-shadow-hover translate-y-[2px];
+    }
+    .btn:active {
+        transform: translateY(6px);
+        box-shadow: 0 0 0 #6a0dad;
+    }
+    .btn-secondary {
+        @apply bg-secondary-color text-black ;
+        box-shadow: 0 6px #0066cc;
+    }
+    .btn-secondary:hover{
+        @apply bg-yellow-color box-shadow-hover;
+    }
+
 }
 
 /*keyframe da animation space-invader*/
@@ -61,5 +87,17 @@
     }
     .box-shadow-neon {
         box-shadow: 0 0 15px #00ffff;
+    }
+    .shadow-secondary {
+        text-shadow: 4px 4px 0 #ff0000;
+    }
+    .bg-rainbow-underline {
+        background-image: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+    }
+    .box-shadow-roxo {
+        box-shadow: 0 6px 0 #6a0dad;
+    }
+    .box-shadow-hover {
+        box-shadow: 0 4px 0 #ff0000;
     }
 }
