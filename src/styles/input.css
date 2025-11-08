@@ -64,6 +64,34 @@
         @apply bg-yellow-color box-shadow-hover;
     }
 
+    .arcade-machine {
+        @apply w-64 h-96 md:w-[300px] md:h-[400px] transform-none border-8 border-yellow-color relative ;
+        background: linear-gradient(135deg, #ff0000 0%, #6a0dad 100%);
+        border-radius: 10px 10px 30px 30px;
+        box-shadow: 0 10px 30px rgba(255, 0, 255, 0.5);
+        transform: perspective(500px) rotateY(-10deg);
+        transition: transform 0.5s;
+    }
+    .arcade-machine:hover{
+        transform: perspective(500px) rotateY(-5deg);
+    }
+
+    .arcade-screen{
+        @apply absolute top-7 left-5 right-5 h-48 bg-[#0a0a20] border-4 border-secondary-color flex items-center justify-center text-secondary-color text-[10px] text-center p-2.5 overflow-hidden;
+    }
+    .arcade-screen::before{
+        content: '';
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(0, 255, 255, 0.1) 0px,
+            rgba(0, 255, 255, 0.1) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+        animation: screen-flicker 5s infinite;
+        @apply absolute top-0 left-0 right-0 bottom-0 ;
+    }
+
 }
 
 /*keyframe da animation space-invader*/
@@ -72,6 +100,12 @@
     25% { transform: translateY(-20px) translateX(10px); }
     50% { transform: translateY(0) translateX(20px); }
     75% { transform: translateY(20px) translateX(10px); }
+}
+
+/*keyframe da animation arcade-screen*/
+@keyframes screen-flicker {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.3; }
 }
 
 /* classe da animation space-invader */
@@ -99,5 +133,12 @@
     }
     .box-shadow-hover {
         box-shadow: 0 4px 0 #ff0000;
+    }
+
+    .shadow-arcade-cv{
+        text-shadow: 1px 1px 0 #898989 , 2px 2px 0 #000000;
+    }
+    .shadow-arcade-linkedin{
+        text-shadow: 1px 1px 0 #0077ff, 2px 2px 0 #000000;
     }
 }
