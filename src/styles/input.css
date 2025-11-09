@@ -92,6 +92,62 @@
         @apply absolute top-0 left-0 right-0 bottom-0 ;
     }
 
+    .section-title{
+        @apply text-lg md:text-xl text-yellow-color shadow-secondary mb-10 pb-3.5 inline-block relative;
+    }
+    .section-title::after{
+        content: '';
+        @apply absolute bottom-0 left-0 w-full h-1;
+        background: repeating-linear-gradient(
+            90deg,
+            #ff00ff,
+            #ff00ff 10px,
+            #00ffff 10px,
+            #00ffff 20px
+        );
+    }
+
+    .project-card{
+        @apply bg-[#1a1a2e] border-4 border-secondary-color p-5 transition-all duration-300 relative overflow-hidden box-shadow-azul;
+    }
+    .project-card:hover{
+        @apply translate-y-3 border-roxo-light-color;
+        box-shadow: 0 12px 0 #6a0dad;
+    }
+    .project-card::before{
+        content: '';
+        @apply absolute top-0 left-0 w-full h-[5px];
+        background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+    }
+
+    .project-image{
+        @apply w-full h-[180px] bg-[#2a2a4a] mb-3.5 flex items-center justify-center text-sm text-gray-400 border-2 border-[#444466] relative overflow-hidden;
+    }
+    .project-image::before{
+        content: '';
+        background: repeating-linear-gradient(
+            0deg,
+            rgba(255, 255, 255, 0.05) 0px,
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+        @apply absolute top-0 left-0 right-0 bottom-0;
+    }
+
+    .project-card-h3{
+        @apply text-yellow-color mb-2.5 text-xs;
+    }
+    .project-card-p{
+        @apply text-gray-300 text-[10px] leading-normal mb-3.5;
+    }
+    .project-tags{
+        @apply flex flex-wrap gap-2 mb-3.5 items-center;
+    }
+    .tag{
+        @apply bg-roxo-color text-white py-1 px-2 text-[8px] rounded-none border border-yellow-color;
+    }
+
 }
 
 /*keyframe da animation space-invader*/
@@ -123,7 +179,7 @@
         box-shadow: 0 0 15px #00ffff;
     }
     .shadow-secondary {
-        text-shadow: 4px 4px 0 #ff0000;
+        text-shadow: 3px 3px 0 #ff0000;
     }
     .bg-rainbow-underline {
         background-image: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
@@ -133,6 +189,9 @@
     }
     .box-shadow-hover {
         box-shadow: 0 4px 0 #ff0000;
+    }
+    .box-shadow-azul{
+        box-shadow: 0 8px 0 #0066cc;
     }
 
     .shadow-arcade-cv{
