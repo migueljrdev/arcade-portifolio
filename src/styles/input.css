@@ -179,6 +179,17 @@
         box-shadow: 0 0 10px #ff00ff;
     }
 
+    .social-links{
+        @apply flex justify-center gap-5 mb-5;
+    }
+    .social-links-a{
+        @apply text-secondary-color text-base transform transition-all duration-300 w-10 h-10 flex items-center justify-center border-2 border-secondary-color bg-black/50;
+    }
+    .social-links-a:hover{
+        @apply text-roxo-light-color border-roxo-light-color scale-[1.2] rotate-[5deg];
+        box-shadow: 0 0 15px #ff00ff;
+    }
+
 }
 
 /*keyframe da animation space-invader*/
