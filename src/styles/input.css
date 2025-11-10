@@ -93,7 +93,7 @@
     }
 
     .section-title{
-        @apply text-lg md:text-xl text-yellow-color shadow-secondary mb-10 pb-3.5 inline-block relative;
+        @apply text-lg md:text-xl text-yellow-color shadow-secondary mb-6 mt-16 pb-3.5 inline-block relative;
     }
     .section-title::after{
         content: '';
@@ -148,6 +148,24 @@
         @apply bg-roxo-color text-white py-1 px-2 text-[8px] rounded-none border border-yellow-color;
     }
 
+    .skills-container{
+        @apply grid grid-cols-1 md:grid-template-skills gap-5;
+    }
+    .skill-category{
+        @apply bg-[#1a1a2e] border-4 border-yellow-color p-5 relative;
+        box-shadow: 0 6px 0 #cc9900;
+    }
+    .skill-h3{
+        @apply text-roxo-light-color mb-3.5 text-xs text-center;
+        text-shadow: 2px 2px 0 #000000;
+    }
+    .skill-list{
+        @apply list-none;
+    }
+    .skill-list-li{
+        @apply py-2 px-0 border-b border-dashed border-[#333355] text-gray-300 text-xs flex justify-between;
+    }
+
 }
 
 /*keyframe da animation space-invader*/
@@ -199,5 +217,9 @@
     }
     .shadow-arcade-linkedin{
         text-shadow: 1px 1px 0 #0077ff, 2px 2px 0 #000000;
+    }
+
+    .grid-template-skills{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     }
 }
