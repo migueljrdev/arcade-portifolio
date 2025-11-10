@@ -165,6 +165,19 @@
     .skill-list-li{
         @apply py-2 px-0 border-b border-dashed border-[#333355] text-gray-300 text-xs flex justify-between;
     }
+    .form-group{
+        @apply mb-5;
+    }
+    .form-group-label{
+        @apply block mb-2 text-yellow-color text-xs;
+    }
+    .form-control{
+        @apply w-full p-3 bg-[#0a0a20] border-2 border-secondary-color text-white text-xs transform transition-all duration-300;
+    }
+    .form-control:focus{
+        @apply outline-none border-roxo-light-color;
+        box-shadow: 0 0 10px #ff00ff;
+    }
 
 }
 
