@@ -87,15 +87,15 @@ document.addEventListener('DOMContentLoaded', ()=>{
     // Header hide/show on scroll
     if (header) {
         // Configura header fixo via JavaScript
-        header.style.position = 'fixed';
-        header.style.top = '0';
-        header.style.left = '0';
-        header.style.paddingLeft = '16px';
-        header.style.paddingRight = '16px';
-        header.style.width = '100%';
-        header.style.zIndex = '1000';
-        header.style.background = '#0a0a20';
-        header.style.transition = 'transform 0.3s ease';
+        // header.style.position = 'fixed';
+        // header.style.top = '0';
+        // header.style.left = '0';
+        // header.style.paddingLeft = '16px';
+        // header.style.paddingRight = '16px';
+        // header.style.width = '100%';
+        // header.style.zIndex = '1000';
+        // header.style.background = '#0a0a20';
+        // header.style.transition = 'transform 0.3s ease';
         
         // Adiciona padding ao body para compensar header fixo
         document.body.style.paddingTop = headerH + 'px';

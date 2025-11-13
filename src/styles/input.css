@@ -17,7 +17,7 @@
     }
 
     .logo{
-        @apply mb-4 text-base md:text-2xl text-yellow-color relative py-3 px-4 bg-roxo-color border-2 border-yellow-color transform skew-custom;
+        @apply mb-4 text-base lg:text-xl text-yellow-color relative py-3 px-4 bg-roxo-color border-2 border-yellow-color transform skew-custom;
     }
     .logo::before{
         content: '';
@@ -25,10 +25,10 @@
     }
 
     .nav-li{
-        @apply flex flex-col gap-3 w-full list-none md:gap-5 md:flex-row;
+        @apply flex flex-col gap-3 w-full list-none md:gap-2 md:flex-row;
     }
     .nav-li-a{
-        @apply block text-center p-3 mb-1 text-secondary-color no-underline text-sm md:py-2 md:px-4 border-2 border-secondary-color bg-black/50 transition-all duration-300 relative;
+        @apply block text-center p-3 mb-1 text-secondary-color no-underline text-sm md:text-[10px] md:py-1 md:px-2 lg:py-2 lg:px-4 border-2 border-secondary-color bg-black/50 transition-all duration-300 relative;
     }
     .nav-li-a:hover{
         @apply text-black bg-secondary-color box-shadow-neon transform -translate-y-1;
