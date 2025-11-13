@@ -47,7 +47,7 @@
     }
 
     .btn{
-        @apply block md:inline-block w-full mr-0 py-3 px-6 bg-roxo-light-color text-white no-underline text-sm cursor-pointer relative overflow-hidden transition-all duration-300 md:mr-3.5 mb-3.5 border-2 border-yellow-color box-shadow-roxo;
+        @apply block md:inline-block w-full mr-0 py-3 px-6 bg-roxo-light-color text-white no-underline text-sm cursor-pointer relative overflow-hidden transition-all duration-300 md:mr-0 mb-3.5 border-2 border-yellow-color box-shadow-roxo;
     }
     .btn:hover {
         @apply bg-yellow-color text-black box-shadow-hover translate-y-[2px];
