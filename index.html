@@ -48,7 +48,7 @@
 
         <section class="flex flex-col md:flex-row text-center py-10 items-center justify-center gap-8 md:gap-12 lg:justify-between lg:max-w-[1070px] lg:m-auto relative " id="about">
             <div class=" max-w-full md:max-w-[400px] lg:max-w-[600px] relative z-[5] mb-7 flex-1 md:flex-none">
-                <h1 class="hero-h1">DESENVOLVEDOR</h1>
+                <h1 class="hero-h1 text-start">DESENVOLVEDOR</h1>
                 <p class="text-[11px] leading-[1.6] lg:text-sm mb-7 text-gray-300 bg-black/50 p-3 border-l-4 border-l-roxo-light-color ">Bem-vindo ao meu universo digital retro! Sou um desenvolvedor apaixonado por criar experiências únicas. Estou trilhando o fullstack pela B7Web e sou formado em ADS pela UNICID. Tenho como principais conhecimentos HTML, CSS, JavaScript, Tailwind CSS, Typescript, NodeJS, Python, Git, Figma, noções em UI UX designer.</p>
                 <div class="lg:flex lg:whitespace-nowrap gap-6 md:justify-between">
                     <a href="#projects" class="btn">VER PROJETOS</a>
@@ -64,8 +64,8 @@
                         LOADING...
                     </div>
                     <div class="absolute bottom-7 left-1/2 whitespace-nowrap transform -translate-x-1/2 items-center justify-center flex flex-col gap-5 text-sm text-center uppercase">
-                        <a class="flex items-center text-gray-300 shadow-arcade-cv" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-down text-3xl mr-2"></i>baixar cv</a>
-                        <a class="flex items-center shadow-arcade-linkedin" href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin text-3xl mr-2"></i>linkedin</a>
+                        <a class="flex items-center text-gray-300 shadow-arcade-cv hover:text-white hover:translate-y-[2px] transition-all duration-200" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-circle-down text-3xl mr-2"></i>baixar cv</a>
+                        <a class="flex items-center shadow-arcade-linkedin hover:text-blue-700 hover:translate-y-[2px] transition-all duration-200" href="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin text-3xl mr-2"></i>linkedin</a>
                     </div> 
                 </div>
             </div>
@@ -110,37 +110,37 @@
             </div>
         </section>
 
-        <section id="skills" class="lg:max-w-[1070px] lg:mx-auto">
+        <section id="skills" class="lg:max-w-[1070px] lg:mx-auto md:pt-10">
             <h2 class="section-title">MINHAS HABILIDADES</h2>
             <div class="skills-container">
                 <div class="skill-category">
                     <h3 class="skill-h3">DESENVOLVIMENTO</h3>
                     <ul class="skill-list">
-                        <li class="skill-list-li">HTML/CSS <span class="skill-level">★★★★★</span></li>
-                        <li class="skill-list-li">Tailwind <span class="skill-level">★★★★☆</span></li>
-                        <li class="skill-list-li">GIT/Github <span class="skill-level">★★★★☆</span></li>
-                        <li class="skill-list-li">JavaScript <span class="skill-level">★★★☆☆</span></li>
-                        <li class="skill-list-li">Python <span class="skill-level">★★★☆☆</span></li>
-                        <li class="skill-list-li">Node.js <span class="skill-level">★★☆☆☆</span></li>
-                        <li class="skill-list-li">Typescript <span class="skill-level">★★☆☆☆</span></li>
+                        <li class="skill-list-li">HTML/CSS  <span class="skill-level skill-advanced">Avançado</span></li>
+                        <li class="skill-list-li">Tailwind <span class="skill-level skill-advanced">Avançado</span></li>
+                        <li class="skill-list-li">GIT/Github <span class="skill-level skill-advanced">Avançado</span></li>
+                        <li class="skill-list-li">JavaScript <span class="skill-level skill-intermediate">Intermediário</span></li>
+                        <li class="skill-list-li">Python <span class="skill-level skill-basic">Básico</span></li>
+                        <li class="skill-list-li">Node.js <span class="skill-level skill-basic">Básico</span></li>
+                        <li class="skill-list-li">Typescript <span class="skill-level skill-basic">Básico</span></li>
                     </ul>
                 </div>
                 <div class="skill-category">
                     <h3 class="skill-h3">DESIGN</h3>
                     <ul class="skill-list">
-                        <li class="skill-list-li">UI/UX Design <span class="skill-level">★★★☆☆</span></li>
-                        <li class="skill-list-li">Photoshop <span class="skill-level">★★★★☆</span></li>
-                        <li class="skill-list-li">Figma <span class="skill-level">★★★☆☆</span></li>
-                        <li class="skill-list-li">Canvas <span class="skill-level">★★★☆☆</span></li>
+                        <li class="skill-list-li">UI/UX Design <span class="skill-level skill-intermediate">Intermediário</span></li>
+                        <li class="skill-list-li">Photoshop <span class="skill-level skill-intermediate">Intermediário</span></li>
+                        <li class="skill-list-li">Figma <span class="skill-level skill-intermediate">Intermediário</span></li>
+                        <li class="skill-list-li">Canvas <span class="skill-level skill-intermediate">Intermediário</span></li>
                     </ul>
                 </div>
 
             </div>
         </section>
         
-        <section id="contact" class="lg:max-w-[1070px] lg:mx-auto">
+        <section id="contact" class="lg:max-w-[1070px] lg:mx-auto md:pt-10">
             <h2 class="section-title">ENTRE EM CONTATO</h2>
-            <div class="max-w-[600px] m-auto bg-[#1a1a2e] p-8 border-4 border-roxo-light-color box-shadow-roxo">
+            <div class="max-w-[800px] bg-[#1a1a2e] p-8 border-4 border-roxo-light-color box-shadow-roxo">
                 <form id="contactForm">
                     <div class="form-group">
                         <label class="form-group-label" for="name">NOME</label>
@@ -152,19 +152,20 @@
                     </div>
                     <div class="form-group">
                         <label class="form-group-label" for="message">MENSAGEM</label>
-                        <textarea id="message" class="form-control  min-h-[150px] resize-y" required></textarea>
+                        <textarea id="message" class="form-control min-h-[150px] md:min-h-[200px] resize-y" required></textarea>
                     </div>
                     <button type="submit" class="btn">ENVIAR MENSAGEM</button>
                 </form>
             </div>
         </section>
 
-        <footer class="text-center py-8 border-t-4 border-dashed border-t-roxo-light-color mt-14 text-gray-300 text-xs relative">
+        <footer class="text-center py-8 border-t-4 border-dashed border-t-roxo-light-color mt-14 text-gray-300 text-xs relative lg:max-w-[1070px] lg:mx-auto">
             <div class="social-links">
                 <a class="social-links-a" href="#"><i class="fab fa-github"></i></a>
                 <a class="social-links-a" href="#"><i class="fab fa-linkedin"></i></a>
                 <a class="social-links-a" href="#"><i class="fa-solid fa-envelope"></i></a>
                 <a class="social-links-a" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="social-links-a" href="#"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             <p class="uppercase">© 2025 desenvolvido por Miguel Jr.</p>
         </footer>
