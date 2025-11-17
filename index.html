@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -49,7 +51,7 @@
         <section class="flex flex-col md:flex-row text-center py-10 items-center justify-center gap-8 md:gap-12 lg:justify-between lg:max-w-[1070px] lg:m-auto relative " id="about">
             <div class=" max-w-full md:max-w-[400px] lg:max-w-[600px] relative z-[5] mb-7 flex-1 md:flex-none">
                 <h1 class="hero-h1 text-start">DESENVOLVEDOR</h1>
-                <p class="text-[11px] leading-[1.6] lg:text-sm mb-7 text-gray-300 bg-black/50 p-3 border-l-4 border-l-roxo-light-color ">Bem-vindo ao meu universo digital retro! Sou um desenvolvedor apaixonado por criar experiências únicas. Estou trilhando o fullstack pela B7Web e sou formado em ADS pela UNICID. Tenho como principais conhecimentos HTML, CSS, JavaScript, Tailwind CSS, Typescript, NodeJS, Python, Git, Figma, noções em UI UX designer.</p>
+                <p class="text-[11px] leading-[1.6] lg:text-sm mb-7 text-gray-300 bg-black/50 p-3 border-l-4 border-l-roxo-light-color ">Bem-vindo ao meu universo digital retro! Sou um desenvolvedor apaixonado por criar experiências únicas. Estou trilhando o fullstack pela B7Web e sou formado em ADS pela UNICID. Tenho como principais conhecimentos HTML, CSS, JavaScript, Tailwind CSS, Typescript, NodeJS, Python, Git, Figma e UI UX designer.</p>
                 <div class="lg:flex lg:whitespace-nowrap gap-6 md:justify-between">
                     <a href="#projects" class="btn">VER PROJETOS</a>
                     <a href="#contact" class="btn btn-secondary">ENTRAR EM CONTATO</a>
@@ -141,20 +143,25 @@
         <section id="contact" class="lg:max-w-[1070px] lg:mx-auto md:pt-10">
             <h2 class="section-title">ENTRE EM CONTATO</h2>
             <div class="max-w-[800px] bg-[#1a1a2e] p-8 border-4 border-roxo-light-color box-shadow-roxo">
-                <form id="contactForm">
+
+                <form method="post" id="contact_form">
                     <div class="form-group">
                         <label class="form-group-label" for="name">NOME</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <input type="text" id="name" name="name" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label class="form-group-label" for="email">E-MAIL</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group-label" for="subject">ASSUNTO</label>
+                        <input type="text" id="subject" name="subject" class="form-control" required>
                     </div>
                     <div class="form-group">
                         <label class="form-group-label" for="message">MENSAGEM</label>
-                        <textarea id="message" class="form-control min-h-[150px] md:min-h-[200px] resize-y" required></textarea>
+                        <textarea id="message" name="message" class="form-control min-h-[150px] md:min-h-[200px] resize-y" required></textarea>
                     </div>
-                    <button type="submit" class="btn">ENVIAR MENSAGEM</button>
+                    <button type="submit" id="submit_button" class="btn">ENVIAR MENSAGEM</button>
                 </form>
             </div>
         </section>
@@ -170,7 +177,8 @@
             <p class="uppercase">© 2025 desenvolvido por Miguel Jr.</p>
         </footer>
     </div>
-    
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="src/js/script.js"></script>
 </body>
 </html>

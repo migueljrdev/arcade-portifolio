@@ -86,17 +86,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
 
     // Header hide/show on scroll
     if (header) {
-        // Configura header fixo via JavaScript
-        // header.style.position = 'fixed';
-        // header.style.top = '0';
-        // header.style.left = '0';
-        // header.style.paddingLeft = '16px';
-        // header.style.paddingRight = '16px';
-        // header.style.width = '100%';
-        // header.style.zIndex = '1000';
-        // header.style.background = '#0a0a20';
-        // header.style.transition = 'transform 0.3s ease';
-        
+
         // Adiciona padding ao body para compensar header fixo
         document.body.style.paddingTop = headerH + 'px';
         
@@ -158,3 +148,47 @@ function typeWriter(element, text, speed = 100) {
     
     type();
 }
+
+//emailJs
+emailjs.init("-to63HXFw7curLQBz");
+document.getElementById("contact_form").addEventListener("submit", function (event){
+    event.preventDefault();
+
+    const formData = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value
+    }
+
+    const serviceID = "service_gefrhv9";
+    const templateID = "template_i6fdkur";
+    const submitButton = document.getElementById("submit_button");
+    submitButton.textContent = "ENVIANDO...";
+    submitButton.disabled = true;
+
+  emailjs.send(serviceID, templateID, formData).then(() =>{
+    Toastify({
+        text: "E-mail enviado com sucesso!",
+        duration: 3000,
+        style: {
+          background: "#28a745",
+          color: "f4f4f4"
+    },
+    }).showToast();
+
+    document.getElementById("contact_form").reset();
+  }).catch((error) => {
+    Toastify({
+        text: "Erro ao enviar o e-mail!",
+        duration: 3000,
+        style: {
+          background: "#dc3545",
+          color: "f4f4f4"
+    },
+    }).showToast();
+  }).finally(()=>{
+    submitButton.textContent = "Enviar mensagem";
+    submitButton.disabled = false;
+  })
+});
