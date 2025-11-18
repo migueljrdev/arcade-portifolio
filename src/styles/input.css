@@ -108,7 +108,7 @@
     }
 
     .project-card{
-        @apply bg-[#1a1a2e] border-4 border-secondary-color p-5 transition-all duration-300 relative overflow-hidden box-shadow-azul;
+        @apply bg-[#1a1a2e] flex flex-col justify-between border-4 border-secondary-color p-5 transition-all duration-300 relative overflow-hidden box-shadow-azul;
     }
     .project-card:hover{
         @apply translate-y-3 border-roxo-light-color;
@@ -145,7 +145,7 @@
         @apply flex flex-wrap gap-2 mb-3.5 items-center;
     }
     .tag{
-        @apply bg-roxo-color text-white py-1 px-2 text-[8px] rounded-none border border-yellow-color;
+        @apply flex items-center bg-roxo-color text-white py-1 px-2 text-[8px] rounded-none border border-yellow-color;
     }
 
 
