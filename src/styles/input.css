@@ -148,8 +148,6 @@
         @apply flex items-center bg-roxo-color text-white py-1 px-2 text-[8px] rounded-none border border-yellow-color;
     }
 
-
-
     .skills-container{
         @apply grid grid-cols-1 md:grid-template-skills gap-5;
     }
@@ -223,7 +221,6 @@
     50% { opacity: 0.3; }
 }
 
-/* classe da animation space-invader */
 @layer utilities {
     .animate-float {
         animation: float 6s ease-in-out infinite;
