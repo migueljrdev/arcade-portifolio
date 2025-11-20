@@ -251,11 +251,14 @@
     }
 
     .shadow-arcade-cv{
-        text-shadow: 1px 1px 0 #898989 , 2px 2px 0 #000000;
+        text-shadow: 1px 1px 0 #000000;
     }
 
     .shadow-arcade-linkedin{
-        text-shadow: 1px 1px 0 #0077ff, 2px 2px 0 #000000;
+        text-shadow: 1px 1px 0 #00ffff9f;
+    }
+    .shadow-arcade-linkedin:hover{
+        text-shadow: 1px 1px 0 #000000;
     }
 
     .grid-template-skills{
